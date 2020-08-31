@@ -83,16 +83,16 @@ button{
     /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
 
 }
-ul{
+.author{
     list-style: none;
     font-size: 12px;
 }
-.view{
+.view,.add-blog{
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding: 20px;
-    margin: 30px;
+    margin: 30px 30px 10px 30px;
     font-size: 14px;
     font-family: "Lora";
 }
@@ -111,6 +111,14 @@ blockquote{
 .id{
     color: palevioletred;
 }
+form input[type="email"],
+form input[type="text"]{
+  border: 1px solid rgba(248, 182, 204, 0.575);
+}
+.source a:hover{
+  text-decoration-line: none;
+}
+
     </style>
   </head>
   <body>
@@ -192,7 +200,67 @@ blockquote{
                             </blockquote>
                         </div>
               </div>
-          </div>
+             </div>
+
+             <div class="row">
+               <div class="col-lg-8 mt-4" style="font-size: 14px;">
+                 <p class="text-justify">
+                  <span class="question font-weight-bold">
+                    What makes someone who they are? 
+                  </span> 
+                    Each person has an idea of their own personality type — if they are bubbly or reserved, sensitive or thick-skinned. Psychologists who try to tease out the science of who we are define personality as individual differences in the way people tend to think, feel and behave.
+
+                    There are many ways to measure personality, but psychologists have mostly given up on trying to divide humanity neatly into types. Instead, they focus on personality traits. 
+                  Everyone feels worried or anxious or down from time to time. But relatively few people develop a mental illness. What's the difference? A mental illness is a mental health condition that gets in the way of thinking, relating to others, and day-to-day function.
+
+                  Dozens of mental illnesses have been identified and defined. They include depression, generalized anxiety disorder, bipolar disorder, obsessive-compulsive disorder, post-traumatic stress disorder, schizophrenia, and many more.
+
+                  Signs and symptoms of mental illness depend in part on the illness. Common symptoms include:
+                  <ul class="ml-3">
+                    <li>feeling down for a while</li>
+                    <li>extreme swings in mood</li>
+                    <li>withdrawing from family, friends, or activities</li>
+                    <li>low energy or problems sleeping</li>
+                    <li>often feeling angry, hostile, or violent</li>
+                    <li>feeling paranoid, hearing voices, or having hallucinations</li>
+                    <li>often thinking about death or suicide.</li>
+                  </ul>  
+                  
+                  In some people, symptoms of a mental illness first appear as physical problems such as stomach aches, back pain, or insomnia.
+
+                  Individuals with a mental illness can often ease their symptoms and feel better by talking with a therapist and following a treatment plan that may or may not include medication.
+                 </p>
+
+                 <p class="source font-italic"><a href="https://www.health.harvard.edu/topics/mental-health">Source:health.harvard.edu</a> </p>
+               </div>
+
+               <div class="col-4">
+                 <div class="add-blog">
+                  <h4 class="font-weight-bold">Get in Touch</h4>
+                  <small class="text-muted">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="	#FFD700" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    Send your blog via mail to get featured
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></small>
+                 <form>
+                   <div class="form-group mt-4">
+                     <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Your email">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                   </div>
+                   <div class="form-group">
+                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                     <small id="fileHelp" class="form-text text-muted">Add your blog</small>
+                   </div>
+                   <button type="submit" class="btn btn-danger w-100">Submit</button>
+                 </form>
+                 </div>
+               </div>
+             </div>
           
           </div>
       </div>
